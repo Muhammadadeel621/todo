@@ -1,0 +1,60 @@
+ *{
+    padding: 0%;
+    margin: 0%;
+   background-color: ;
+    
+}
+
+.body{
+  background-color: grey;
+}
+
+
+.navbar{
+  background-color: #9FA8DA;
+}
+
+.navbar2{
+  background-color: grey;
+}
+
+.container{
+    margin: 0%;
+    padding: 0%;
+}
+.input{
+
+  padding: 6px 6px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #9FA8DA;
+  border-radius: 4px;
+}  
+.text{
+  font-size: 30px; color: #9FA8DA;  font-family: Arial, Helvetica, sans-serif; 
+}
+.btnEdit {
+  margin: 10px 10px 10px 5px;
+  padding: 6px;
+  background-color: #9FA8DA ;
+  box-sizing: border-box;
+  border: 2px solid #434b79;
+  border-radius: 4px
+}
+
+.btnDel {
+  margin: 10px 5px 10px 10px  ;
+  padding: 6px;
+  background-color: #9FA8DA ;
+  box-sizing: border-box;
+  border: 2px solid #434b79;
+  border-radius: 4px
+}
+
+#list {
+  list-style: none;
+}
+
+#input_box{
+  margin: 6px;
+}

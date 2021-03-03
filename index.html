@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>To-do's App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyAdOdurBNy9YWVukb8SeEomTz45cQSY7xk",
+          authDomain: "to-do-app-98285.firebaseapp.com",
+          projectId: "to-do-app-98285",
+          storageBucket: "to-do-app-98285.appspot.com",
+          messagingSenderId: "749033367069",
+          appId: "1:749033367069:web:1b047188d988ed76da48f4",
+          measurementId: "G-QX6YDB2GTB"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+      </script>
+
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+</head>
+
+<body class="body">
+
+    <!-- Image and text -->
+    <nav style="background-color: aqua;" class="navbar2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <b> TO-DO App </b>
+            </a>
+        </div>
+    </nav>
+    <br>
+
+    <div class="text-center">
+
+        <div>
+            <input size="50%" type="text" placeholder="Enter a task" id="input_box"> <br> <br>
+            <button style="background-color: chocolate;" onclick="addTodo()" id="input_button" type="button"
+                class="btn btn-primary">Enter Task</button>
+            <button style="background-color: chocolate;" onclick="deleteTodo()"  type="button"
+                class="btn btn-primary">Delete All</button>
+        </div>
+        <hr>
+
+        <p class="text header"><b> DAILY ROUTIINE </b></p>
+
+        <div>
+            <ul id="list">
+
+            </ul>
+        </div>
+
+        <script src="app.js"></script>
+       
+    
+</body>
+
+</html>
